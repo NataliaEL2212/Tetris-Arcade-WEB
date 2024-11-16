@@ -87,7 +87,7 @@ st.image("logo_pucp.png", width=200,use_container_width=False)
 # Mostrar el título con CSS personalizado
 st.markdown('<p class="titulo">TETRIS</p>', unsafe_allow_html=True)
 
-st.image("arcade.gif", width=400,use_container_width=True)
+st.image("arcade.gif", width=500,use_container_width=True)
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 st.image("tetris_mark.jpg", width=300,use_container_width=True)
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
