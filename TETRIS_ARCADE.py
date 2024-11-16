@@ -20,27 +20,14 @@ st.markdown(
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Wallpoet&display=swap');
-
     /* Cambiar el color de fondo global */
     body {
         background-color: white;
     }
-
-    /* Cambiar el color de fondo del contenedor principal */
+    /* Opcional: Cambiar el color del contenedor principal */
     .stApp {
         background-color: black;
-        color: white;
     }
-
-    /* Cambiar la fuente y color global */
-    body, .centered-table, .dataframe-container {
-        color: white !important; /* Forzar texto blanco */
-        font-family: 'Courier New', monospace; /* Cambiar la fuente */
-        font-size: 18px;
-        text-align: justify; /* Opcional: justifica el texto */
-    }
-
-    /* Estilo del título */
     .titulo {
         font-size: 160px; /* Tamaño del título */
         color: #13a7fd;  /* Color del título */
@@ -48,26 +35,44 @@ st.markdown(
         text-align: center; /* Centrar el título */
         margin-bottom: -30px;
     }
-
-    /* Estilo del subtítulo */
     .subtitulo {
         font-size: 55px; /* Tamaño del subtítulo */
-        color: white;  /* Color del subtítulo */
+        color: blanco;  /* Color del subtítulo */
         text-align: center; /* Centrar el subtítulo */
     }
-
-    /* Justificar texto */
-    p, .subsubtitulo, body {
-        text-align: justify; /* Justificar texto */
-        line-height: 1.5; /* Espaciado entre líneas */
+    .subsubtitulo {
+        font-size: 30px; /* Tamaño del subtítulo */
+        color: blanco;  /* Color del subtítulo */
+        text-align: center; /* Centrar el subtítulo */
+    }
+    .space {
+        font-size: 40px; /* Tamaño del subtítulo */
+        color: black;  /* Color del subtítulo */
+        text-align: center; /* Centrar el subtítulo */
+    }
+    /* Cambiar la fuente global */
+    body {
+        font-size: 20px;
+        font-family: 'Courier New', monospace; /* Cambia por la fuente que desees */
+        text-align: center; /* Centrar el body */
     }
 
-    /* Estilo de la tabla */
-    .dataframe {
-        background-color: #000; /* Fondo negro para la tabla */
-        color: white; /* Texto blanco */
-        border: 1px solid white; /* Bordes blancos */
-        text-align: center; /* Centrar texto en la tabla */
+    /* Cambiar la fuente del título */
+    h1 {
+        font-family: 'Comic Sans MS', cursive, sans-serif; 
+        color: #FF5733; /* Cambiar el color del título */
+    }
+
+    /* Cambiar la fuente del subtítulo */
+    h2 {
+        font-family: 'Georgia', serif;
+        color: #4CAF50;
+    }
+
+    /* Cambiar la fuente de los párrafos */
+    p {
+        font-family: 'Wallpoet', sans-serif;
+        font-size: 16px;
     }
     </style>
     """,
@@ -144,6 +149,23 @@ st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
 st.markdown('<p class="subtitulo">PUNTAJES GLOBALES</p>', unsafe_allow_html=True)
 #st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
+
+#Estilo del dataframe
+st.markdown(
+    """
+    <style>
+    .centered-table {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .dataframe {
+        text-align: center; /* Alinear el contenido de la tabla */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # Mostrar todo el DataFrame
 st.markdown('<div class="centered-table">', unsafe_allow_html=True)
