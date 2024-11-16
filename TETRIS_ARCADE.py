@@ -157,14 +157,30 @@ st.markdown('<p class="subtitulo">PUNTAJES GLOBALES</p>', unsafe_allow_html=True
 st.markdown(
     """
     <style>
-    .centered-table {
-        color: white !important;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+    .dataframe-container {
+        background-color: black; /* Fondo negro */
+        color: white !important; /* Texto blanco */
+        border: 1px solid white; /* Bordes blancos */
+        text-align: center; /* Alinear el texto en la tabla */
     }
-    .dataframe {
-        text-align: center; /* Alinear el contenido de la tabla */
+
+    .dataframe-container table {
+        background-color: black; /* Fondo negro para la tabla */
+        color: white; /* Texto blanco en la tabla */
+        border-collapse: collapse; /* Sin espacios entre celdas */
+        width: 100%; /* Ajustar el ancho */
+    }
+
+    .dataframe-container th,
+    .dataframe-container td {
+        border: 1px solid white; /* Bordes blancos */
+        padding: 8px; /* Espaciado dentro de las celdas */
+        text-align: center; /* Centrar texto */
+    }
+
+    .dataframe-container th {
+        font-weight: bold; /* Encabezados en negrita */
+        background-color: #333333; /* Fondo más oscuro para encabezados */
     }
     </style>
     """,
@@ -172,7 +188,7 @@ st.markdown(
 )
 
 # Mostrar todo el DataFrame
-st.markdown('<div class="centered-table">', unsafe_allow_html=True)
+st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
 st.table(df[['USER', 'SCORE', 'FECHA']])
 st.markdown('</div>', unsafe_allow_html=True)
 
