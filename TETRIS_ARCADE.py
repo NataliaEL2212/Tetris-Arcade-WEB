@@ -153,8 +153,10 @@ st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 st.markdown('<p class="subtitulo">PUNTAJES GLOBALES</p>', unsafe_allow_html=True)
 #st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
+df_limited = df[['USER', 'SCORE', 'FECHA']]
+
 # Convertir DataFrame a HTML con estilos personalizados
-table_html = df.to_html(classes='styled-table', index=False)
+table_html = df_limited.to_html(classes='styled-table', index=False)
 
 # Estilos CSS personalizados para la tabla
 st.markdown(
