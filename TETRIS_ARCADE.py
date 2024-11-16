@@ -22,11 +22,12 @@ st.markdown(
     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Wallpoet&display=swap');
     /* Cambiar el color de fondo global */
     body {
-        background-color: black;
+        background-color: white;
     }
     /* Opcional: Cambiar el color del contenedor principal */
     .stApp {
         background-color: black;
+        color: white;
     }
     .titulo {
         font-size: 160px; /* Tamaño del título */
@@ -52,10 +53,10 @@ st.markdown(
     }
     /* Cambiar la fuente global */
     body {
+        color: white !important; /* Forzar texto blanco */
         font-size: 20px;
         font-family: 'Courier New', monospace; /* Cambia por la fuente que desees */
         text-align: center; /* Centrar el body */
-        color: white !important; /* Forzar texto blanco */
     }
 
     /* Cambiar la fuente del título */
@@ -157,14 +158,14 @@ st.markdown(
     """
     <style>
     .centered-table {
+        color: white !important;
         display: flex;
         justify-content: center;
         margin-top: 20px;
-        color: white; 
     }
     .dataframe {
+        color: white !important;
         text-align: center; /* Alinear el contenido de la tabla */
-        color: white; 
     }
     </style>
     """,
