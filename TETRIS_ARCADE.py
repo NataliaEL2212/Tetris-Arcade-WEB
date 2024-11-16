@@ -163,7 +163,7 @@ st.markdown(
     """
     <style>
     .table-container {
-        max-height: 630px; /* Altura máxima para la tabla */
+        max-height: 600px; /* Altura máxima para la tabla */
         overflow-y: auto; /* Barra de desplazamiento vertical */
         margin: 0 auto; /* Centrar la tabla */
         padding: 10px;
