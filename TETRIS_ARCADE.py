@@ -94,7 +94,7 @@ st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
 
 # Mostrar el subtítulo con CSS personalizado
-st.markdown('<p class="subtitulo">TOP 5</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitulo">TOP 3</p>', unsafe_allow_html=True)
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
 # Datos del podio
