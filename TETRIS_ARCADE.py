@@ -22,7 +22,7 @@ st.markdown(
     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Wallpoet&display=swap');
     /* Cambiar el color de fondo global */
     body {
-        background-color: white;
+        background-color: black;
     }
     /* Opcional: Cambiar el color del contenedor principal */
     .stApp {
@@ -55,6 +55,7 @@ st.markdown(
         font-size: 20px;
         font-family: 'Courier New', monospace; /* Cambia por la fuente que desees */
         text-align: center; /* Centrar el body */
+        color: white;
     }
 
     /* Cambiar la fuente del título */
@@ -73,6 +74,7 @@ st.markdown(
     p {
         font-family: 'Wallpoet', sans-serif;
         font-size: 16px;
+        color: white;
     }
     </style>
     """,
