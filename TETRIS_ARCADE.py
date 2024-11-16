@@ -153,24 +153,44 @@ st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 st.markdown('<p class="subtitulo">PUNTAJES GLOBALES</p>', unsafe_allow_html=True)
 #st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
-#Estilo del dataframe
+# Convertir DataFrame a HTML con estilos personalizados
+table_html = df[['USER', 'SCORE', 'FECHA']].to_html(classes='styled-table', index=False)
+
+# Estilos CSS personalizados para la tabla
 st.markdown(
     """
     <style>
-    .centered-table {
-        color="pink",
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 18px;
+        font-family: 'Courier New', monospace;
+        min-width: 400px;
+        width: 100%;
+        color: white; /* Texto blanco */
+        background-color: black; /* Fondo negro */
+    }
+    .styled-table thead tr {
+        background-color: #333333; /* Fondo oscuro para encabezados */
+        color: white; /* Texto blanco */
+        text-align: center;
+    }
+    .styled-table th,
+    .styled-table td {
+        border: 1px solid white; /* Bordes blancos */
+        padding: 12px 15px;
+        text-align: center; /* Centrar texto */
+    }
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
-# Mostrar todo el DataFrame
-st.markdown('<div class="centered-table">', unsafe_allow_html=True)
-st.table(df[['USER', 'SCORE', 'FECHA']])
+# Mostrar la tabla HTML con estilos personalizados
+st.markdown(table_html, unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
