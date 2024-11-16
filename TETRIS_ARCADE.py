@@ -87,7 +87,7 @@ st.image("logo_pucp.png", width=200,use_container_width=False)
 # Mostrar el título con CSS personalizado
 st.markdown('<p class="titulo">TETRIS</p>', unsafe_allow_html=True)
 
-st.image("arcade.gif", width=300,use_container_width=True)
+st.image("arcade.gif", width=400,use_container_width=True)
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 st.image("tetris_mark.jpg", width=300,use_container_width=True)
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
@@ -209,6 +209,7 @@ st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
 st.markdown('<p class="subsubtitulo">SOBRE EL PROYECTO</p>', unsafe_allow_html=True)
 
+st.markdown('<body></body>', unsafe_allow_html=True)
 st.markdown('<body>Este proyecto fue creado para el curso de Sistemas Digitales durante el semestre 2024-2, titulado TETRIS ARCADE. Integra una TM4C123GH6PM y un ESP32C3 para emular el juego Tetris, incluyendo una pantalla Nokia5110, pulsadores y un buzzer.</body>', unsafe_allow_html=True)
 st.markdown('<body></body>', unsafe_allow_html=True)
 st.markdown('<body>Desarrollado mediante Code Composer, Arduino IDE y Visual Studio Code.</body>', unsafe_allow_html=True)
