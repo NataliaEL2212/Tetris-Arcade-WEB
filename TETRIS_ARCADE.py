@@ -47,7 +47,7 @@ st.markdown(
         text-align: center; /* Centrar el subtítulo */
     }
     .space {
-        font-size: 40px; /* Tamaño del subtítulo */
+        font-size: 35px; /* Tamaño del subtítulo */
         color: black;  /* Color del subtítulo */
         text-align: center; /* Centrar el subtítulo */
     }
@@ -201,6 +201,7 @@ st.markdown(
 
 # Mostrar la tabla HTML con un contenedor con barra deslizable
 st.markdown('<div class="table-container">' + table_html + '</div>', unsafe_allow_html=True)
+st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 st.image("tetris_mark.jpg", width=300,use_container_width=True)
