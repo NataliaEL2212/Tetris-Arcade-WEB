@@ -118,7 +118,7 @@ for bar, user, score in zip(bars, users, scores):
     # Nombre del usuario encima de la barra
     ax.text(
         bar.get_x() + bar.get_width() / 2,
-        bar.get_height() + 10,
+        bar.get_height() + 8,
         user,
         ha="center",
         fontsize=14,
