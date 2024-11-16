@@ -151,7 +151,7 @@ st.image("tetris_mark.jpg", width=300,use_container_width=True)
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
 st.markdown('<p class="subtitulo">PUNTAJES GLOBALES</p>', unsafe_allow_html=True)
-#st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
+st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
 df_limited = df[['USER', 'SCORE', 'FECHA']]
 
