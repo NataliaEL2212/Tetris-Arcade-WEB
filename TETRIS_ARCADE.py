@@ -153,22 +153,33 @@ st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 st.markdown('<p class="subtitulo">PUNTAJES GLOBALES</p>', unsafe_allow_html=True)
 #st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 
+# Limitar los datos a los primeros 10 valores
+df_limited = df[['USER', 'SCORE', 'FECHA']].head(10)
+
 # Convertir DataFrame a HTML con estilos personalizados
-table_html = df[['USER', 'SCORE', 'FECHA']].to_html(classes='styled-table', index=False)
+table_html = df_limited.to_html(classes='styled-table', index=False)
 
 # Estilos CSS personalizados para la tabla
 st.markdown(
     """
     <style>
+    .table-container {
+        max-height: 400px; /* Altura máxima para la tabla */
+        overflow-y: auto; /* Barra de desplazamiento vertical */
+        margin: 0 auto; /* Centrar la tabla */
+        padding: 10px;
+        background-color: black; /* Fondo negro */
+        border: 1px solid white; /* Borde alrededor del contenedor */
+        border-radius: 10px; /* Bordes redondeados */
+    }
     .styled-table {
         border-collapse: collapse;
-        margin: 25px 0;
         font-size: 18px;
         font-family: 'Courier New', monospace;
         min-width: 400px;
-        width: 100%;
         color: white; /* Texto blanco */
         background-color: black; /* Fondo negro */
+        width: 100%;
     }
     .styled-table thead tr {
         background-color: #333333; /* Fondo oscuro para encabezados */
@@ -189,9 +200,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Mostrar la tabla HTML con estilos personalizados
-st.markdown(table_html, unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
+# Mostrar la tabla HTML con un contenedor con barra deslizable
+st.markdown('<div class="table-container">' + table_html + '</div>', unsafe_allow_html=True)
 
 st.markdown('<p class="space">ESPACIO</p>', unsafe_allow_html=True)
 st.image("tetris_mark.jpg", width=300,use_container_width=True)
