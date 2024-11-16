@@ -55,7 +55,7 @@ st.markdown(
         font-size: 20px;
         font-family: 'Courier New', monospace; /* Cambia por la fuente que desees */
         text-align: center; /* Centrar el body */
-        color: white;
+        color: white !important; /* Forzar texto blanco */
     }
 
     /* Cambiar la fuente del título */
@@ -160,9 +160,11 @@ st.markdown(
         display: flex;
         justify-content: center;
         margin-top: 20px;
+        color: white; 
     }
     .dataframe {
         text-align: center; /* Alinear el contenido de la tabla */
+        color: white; 
     }
     </style>
     """,
