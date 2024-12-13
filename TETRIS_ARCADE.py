@@ -37,7 +37,7 @@ st.markdown(
         margin-bottom: -30px;
     }
     .subtitulo {
-        font-size: 55px; /* Tamaño del subtítulo */
+        font-size: 55px !important; /* Tamaño del subtítulo */
         color: blanco;  /* Color del subtítulo */
         text-align: center; /* Centrar el subtítulo */
     }
