@@ -217,3 +217,4 @@ st.markdown('<body>Integrado con Apps Script y Streamlit Cloud.</body>', unsafe_
 st.markdown('<body></body>', unsafe_allow_html=True)
 st.markdown('<body>Autores:</body>', unsafe_allow_html=True)
 st.markdown('<body>-Natalia Escudero Lay</body>', unsafe_allow_html=True)
+st.markdown('<body>-Santiago Tarazona</body>', unsafe_allow_html=True)
