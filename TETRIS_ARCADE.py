@@ -42,12 +42,12 @@ st.markdown(
         text-align: center; /* Centrar el subtítulo */
     }
     .subsubtitulo {
-        font-size: 30px; /* Tamaño del subtítulo */
+        font-size: 30px !important; /* Tamaño del subtítulo */
         color: blanco;  /* Color del subtítulo */
         text-align: center; /* Centrar el subtítulo */
     }
     .space {
-        font-size: 35px; /* Tamaño del subtítulo */
+        font-size: 35px !important; /* Tamaño del subtítulo */
         color: black;  /* Color del subtítulo */
         text-align: center; /* Centrar el subtítulo */
     }
