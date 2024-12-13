@@ -30,7 +30,7 @@ st.markdown(
         color: white;
     }
     .titulo {
-        font-size: 160px; /* Tamaño del título */
+        font-size: 160px !important; /* Tamaño del título */
         color: #13a7fd;  /* Color del título */
         font-weight: bold;
         text-align: center; /* Centrar el título */
